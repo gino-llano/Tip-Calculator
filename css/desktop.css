@@ -1,0 +1,30 @@
+header #logo
+{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+main
+{
+    margin: 0 auto;
+    grid-template-areas:
+    "bill   results"
+    "tip    results"
+    "people results";
+}
+#tip .options-container
+{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 48px);
+}
+#results
+{
+    width: 480px;
+    justify-self: flex-end;
+    position: relative;
+}
+#results input
+{
+    position: absolute;
+    bottom: 30px;
+    width: calc(100% - 60px);
+}
